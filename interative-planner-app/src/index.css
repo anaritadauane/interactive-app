@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+/* font-family: 'Space Mono', monospace;  font-family: 'Inter', sans-serif;*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace; 
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.links{
+    justify-content: stretch;
+}
+
+.container {
+    display: flex;
+    margin: 50px;
+    border: solid 1px #99DD88;
+    overflow: auto;
+    max-height: 1000px;
+    min-height: 600px;
+    border-radius: 5px;
+}
+
+.tasks-container {
+    border: solid 1px black; 
+    max-height: 900px;
+    min-height: 200px;
+    border-radius: 5px;
+    margin: 50px;
+    width: 40%;
+   
+
+}
+
+.projects-container {
+    border: solid 1px black; 
+    max-height: 900px;
+    min-height: 200px;
+    border-radius: 5px;
+    margin: 50px;
+    width: 75%;
+    
+
+
+}
+
+.tasks-container h4 p, .projects-container h4 p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+ 
+
+  }
+
+  .task {
+    background: #f4f4f4;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: solid 1px black; 
+    border-radius: 5px;
+  }
+
+  .project{
+
+    background: #f4f4f4;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: solid 1px black;
+    border-radius: 5px; 
+
+  }
+
+  button{               /* change to class name after .btn*/
+    display: inline-block;
+    background: #53D769;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* .btn-block {
+    display: block;
+    width: 100%;
+  } */
+
+
+  /* links */
+
+  a{
+    color: black;
+    text-decoration: none;
+  }
+
+  /*  Toggle Button   */
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  } 
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  /* Forms stylying */
+
+.add-form {
+    margin-bottom: 40px;
+  }
+
+.form-control {
+    margin: 20px 0;
+  }
+
+.form-control label{
+    display: block;
+    margin-left: 10px;
+  }
+
+.form-control input {
+    width: 90%;
+    height: 40px;
+    margin: 10px;
+    padding: 3px 7px;
+    font-size: 1em;
+  }
+
+.form-control-check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+.form-control-check label {
+    flex: 1;
+  }
+  
+.form-control-check input {
+    flex: 2;
+    height: 20px;
+}
+
+
+  
